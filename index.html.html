@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuestionario sobre CSS Grid y Bootstrap</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Cuestionario sobre CSS Grid y Bootstrap</h1>
+  
+  <form id="quizForm">
+    <h3>Pregunta 1:</h3>
+    <p>¿Cuál de las siguientes opciones describe mejor CSS Grid?</p>
+    <input type="radio" name="q1" value="a"> a) Un framework para el diseño web responsivo.<br>
+    <input type="radio" name="q1" value="b"> b) Una herramienta para crear estilos visuales en una página web.<br>
+    <input type="radio" name="q1" value="c"> c) Una especificación de CSS que permite crear diseños de rejilla bidimensionales.<br>
+    <input type="radio" name="q1" value="d"> d) Una biblioteca de componentes predefinidos para el diseño web.<br>
+    
+    <h3>Pregunta 2:</h3>
+    <p>¿Cuál de las siguientes afirmaciones es cierta sobre CSS Grid?</p>
+    <input type="radio" name="q2" value="a"> a) Solo es compatible con navegadores modernos.<br>
+    <input type="radio" name="q2" value="b"> b) Es necesario utilizar un framework como Bootstrap para utilizar CSS Grid.<br>
+    <input type="radio" name="q2" value="c"> c) Solo se utiliza para crear diseños de una sola columna.<br>
+    <input type="radio" name="q2" value="d"> d) Permite establecer reglas de posicionamiento y alineación de elementos en una rejilla.<br>
+    
+    <h3>Pregunta 3:</h3>
+    <p>¿Cuál de las siguientes opciones describe mejor el framework Bootstrap?</p>
+    <input type="radio" name="q3" value="a"> a) Una especificación de CSS que permite crear diseños de rejilla bidimensionales.<br>
+    <input type="radio" name="q3" value="b"> b) Una biblioteca de componentes predefinidos para el diseño web.<br>
+    <input type="radio" name="q3" value="c"> c) Un lenguaje de programación para el desarrollo de aplicaciones web.<br>
+    <input type="radio" name="q3" value="d"> d) Un editor visual para crear sitios web sin escribir código.<br>
+    
+    <h3>Pregunta 4:</h3>
+    <p>¿Cuál de las siguientes afirmaciones es cierta sobre el uso de CSS Grid y Bootstrap juntos?</p>
+    <input type="radio" name="q4" value="a"> a) CSS Grid reemplaza completamente a Bootstrap en la creación de diseños web.<br>
+    <input type="radio" name="q4" value="b"> b) No es posible combinar CSS Grid y Bootstrap en un mismo proyecto.<br>
+    <input type="radio" name="q4" value="c"> c) Bootstrap utiliza CSS Grid como su sistema de rejilla predeterminado.<br>
+    <input type="radio" name="q4" value="d"> d) CSS Grid y Bootstrap
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Cuestionario sobre CSS Grid y Bootstrap</title>
+      <script src="script.js"></script>
+    </head>
+    <body>
+      <h1>Cuestionario sobre CSS Grid y Bootstrap</h1>
+      
+      <form id="quizForm">
+        <!-- Preguntas del cuestionario -->
+      </form>
+      
+      <button onclick="calcularResultados()">Calcular resultados</button>
+      
+      <div id="resultado"></div>
+    
+      <script>
+        function calcularResultados() {
+          const respuestasCorrectas = ['c', 'd', 'b', 'd', 'b']; // Respuestas correctas para cada pregunta
+          const form = document.getElementById('quizForm');
+          const respuestas = form.elements;
+          let contadorCorrectas = 0;
+    
+          for (let i = 0; i < respuestas.length; i++) {
+            const pregunta = respuestas[i].name;
+            const respuestaSeleccionada = respuestas[i].value;
+    
+            if (respuestaSeleccionada === respuestasCorrectas[i]) {
+              contadorCorrectas++;
+            }
+          }
+    
+          const resultadoDiv = document.getElementById('resultado');
+          resultadoDiv.innerHTML = `Respuestas correctas: ${contadorCorrectas}`;
+        }
+      </script>
+    </body>
+    </html>
+    
